@@ -7,8 +7,19 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-item>
+    <ion-label>Prueba 1</ion-label>
+    <ion-checkbox [(ngModel)] = 'a1'  color="dark"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Prueba 2</ion-label>
+    <ion-checkbox [(ngModel)] = 'a2' color="dark"></ion-checkbox>
+  </ion-item>
+
+  {{vector}}
+
+  <button ion-button (click) = 'dispararFuncion()' block>Guardar</button>
+
 </ion-content>
